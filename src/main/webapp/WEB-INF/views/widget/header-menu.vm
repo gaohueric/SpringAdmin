@@ -1,0 +1,49 @@
+<ul class="nav navbar-nav">
+    <li class="active">
+        <a href="${rc.contextPath}/index">首页</a>
+    </li>
+    <li class="menu-dropdown mega-menu-dropdown ">
+        <!-- data-hover="megamenu-dropdown" -->
+        <a data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+            业务处理 
+            <i class="fa fa-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu" style="min-width: 710px">
+            <li>
+                <div class="mega-menu-content">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <ul class="mega-menu-submenu">
+
+                                <li>
+                                    <a href="${rc.contextPath}/flight/list" class="iconify">
+                                        <i class="icon-home"></i>
+                                        航班管理 </a>
+                                </li>
+
+                                <li>
+                                    <a href="${rc.contextPath}/cabin/list" class="iconify">
+                                        <i class="icon-home"></i>
+                                        舱位管理 </a>
+                                </li>
+                                <li>
+                                    <a href="${rc.contextPath}/order/list" class="iconify">
+                                        <i class="icon-home"></i>
+                                        订单管理 </a>
+                                </li>
+
+                                <li>
+                                    <a href="${rc.contextPath}/member/list" class="iconify">
+                                        <i class="icon-home"></i>
+                                        会员管理 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+
+</ul>

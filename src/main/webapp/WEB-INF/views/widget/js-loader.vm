@@ -1,0 +1,87 @@
+<script type="text/javascript">
+    var __ctx = "${rc.contextPath}";
+</script>
+<script src="${rc.contextPath}/js/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/plugins/bootstrap-toastr/toastr.min.js"></script>
+<script src="${rc.contextPath}/js/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/plugins/moment.min.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/plugins/bootstrap-toastr/toastr.min.js"></script>
+<script src="${rc.contextPath}/js/metronic.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/layout.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/quick-sidebar.js" type="text/javascript"></script>
+<script src="${rc.contextPath}/js/demo.js" type="text/javascript"></script>
+
+<script>
+    jQuery(document).ready(function() {
+        Metronic.init(); // init metronic core componets
+        Layout.init(); // init layout
+        Demo.init(); // init demo(theme settings page)
+        QuickSidebar.init(); // init quick sidebar
+    });
+</script>
+
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/vue.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/vue-resource.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/widget/vue.page.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/widget/vue.breadcrumb.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/widget/vue.select.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/widget/vue.filter.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/widget/vue.icheck.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/widget/vue.resource.cfg.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/jquery.serializeObject.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/alertify.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/somecontrols/contorlWidth.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/icheck/icheck.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/chart-plug-in/highcharts.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/chart-plug-in/exporting.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/chart-plug-in/highcharts-3d.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/chart-plug-in/highcharts-more.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/generate_chart.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/jquery-file-upload/js/jquery.fileupload.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/sweetalert.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+<script type="text/javascript">
+    $(document).ajaxStart(function(e){
+        Metronic.blockUI({ boxed: true });
+    });
+    $(document).ajaxStop(function(){
+        Metronic.unblockUI();
+    });
+
+    // CSRF
+    var csrfHeader = {'${_csrf.headerName}': '${_csrf.token}'};
+    jQuery.ajaxSetup({
+
+        //headers: csrfHeader,
+        error : function(err) {
+            toastr.error(err, '', {timeOut: 3000, positionClass: "toast-top-center"});
+        }
+    });
+
+    // SSO error
+    $(document).ajaxError(function(event, xhr, options) {
+        try {
+            var returnMsg = xhr.responseText;
+            var returnObj = JSON.parse(returnMsg);
+            if (returnObj.code == 'LY0500102003') {
+                toastr.error(returnObj.message + '请刷新页面', '', { timeOut: 3000, positionClass: "toast-top-center"});
+            }
+            if (returnObj.code == 'LY0500102007') {
+                window.location.href = __ctx + '/page/error/403';
+            }
+        }  catch(e) {
+        }
+    });
+
+</script>

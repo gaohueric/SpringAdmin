@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_csrf" content="${_csrf.token}"/>
+    <!-- default header name is X-CSRF-TOKEN -->
+    <meta name="_csrf_header" content="${_csrf.headerName}"/>
+    <link rel="icon" href="${rc.contextPath}/img/favicon.png" />
+    <style type="text/css">
+        [v-cloak] {
+            display: none;
+        }
+        .pagination li select {
+            position: relative;
+            float: left;
+            margin-left: -1px;
+            color: #337ab7;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            padding-top: 7px;
+            padding-bottom: 6px;
+            width: 61px;
+        }
+    </style>
+
+    <title>机票管理平台</title>
+
+    #parse("widget/css-loader.vm")
+
+    <script src="${rc.contextPath}/js/plugins/jquery-1.12.2.min.js"></script>
+    <script src="${rc.contextPath}/js/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body class="page-header-menu-fixed">
+<div id="vue-evn" >
+    <div class="development" v-show="dev" v-cloak></div>
+</div>
+<div class="page-header">
+    <div class="page-header-top">
+        <div class="container">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="${rc.contextPath}/index"><img src="${rc.contextPath}/img/login/logs.png" style="margin-top: 0px" alt="logo" class="logo-default"> </a>
+            </div>
+            <!-- END LOGO -->
+
+            <div class="top-menu">
+                #parse("widget/top-menu.vm")
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header-menu">
+        <div class="container">
+            <div class="hor-menu ">
+                #parse("widget/header-menu.vm")
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="page-container">
+    <div class="container">
+        $screen_content
+    </div>
+   
+</div>
+<div class="page-footer">
+    <div class="container text-center">
+        #parse("widget/footer.vm")
+    </div>
+</div>
+<div class="scroll-to-top">
+    <i class="icon-arrow-up"></i>
+</div>
+<!-- JS Begin -->
+    #parse("widget/js-loader.vm")
+<!-- End of JS -->
+</body>
+</html>

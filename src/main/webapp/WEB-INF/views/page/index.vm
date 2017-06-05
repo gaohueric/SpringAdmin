@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机票轮播图</title>
+
+    <link href="../../../static/css/style.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="../../../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../static/js/jquery.SuperSlide.js"></script>
+</head>
+<body>
+<br>
+<div class="index_focus">
+    <a href="javascript:;" class="index_focus_pre" title="上一张">上一张</a>
+    <a href="javascript:;" class="index_focus_next" title="下一张">下一张</a>
+    <div class="bd">
+        <ul>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>基于分布式服务框架的机票在线预定与管理系统</h3>
+                        <p class="text">分布式服务框架的机票管理系统后台,采用Spring+Mybatis搭建,能进行前台预定系统和后台系统进行管理,为航空公司、供应商、OTA管理员提供方便快捷的管理方式。</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/66.jpg" width="1600" height="600" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>航班管理</h3>
+                        <p class="text">能对航班动态进行管理,航线的录入、已录入的航班已列表形式展现、提供动态检索航班信息,修改航班信息、删除航班信息、编辑等航班管理功能.</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/22.png" width="1600" height="600" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>舱位管理</h3>
+                        <p class="text">能为某一航班进行舱位信息的录入、能动态检索到舱位信息、修改舱位信息、删除某一舱位,对舱位信息管理。</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/140.jpg" width="1600" height="600" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>订单管理</h3>
+                        <p class="text">前台预定系统经过航班查询,选择之后进行下单,下好的订单后台管理系统能进行管理,取消的订单可以删除,能 根据订单号、起飞机场、抵达机场、起飞时间、下单时间进行动态的查询。动态的对订单进行管理。</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/110.jpg" width="1600" height="600" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>会员管理</h3>
+                        <p class="text">能对前台系统注册的会员信息进行管理、密码以密文展示,保障了用户账号的安全性,同时能根据会员编号和会员信息对用户进行检索,对注销的用户进行删除,达到动态管理用户的功能。</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/180.png" width="1600" height="600" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>分布式版本控制系统Git</h3>
+                        <p class="text">Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
+                            Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。[2]  Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/77.png" width="1600" height="600" alt="">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>项目构建与管理</h3>
+                        <p class="text">项目采用Maven进行构建与管理,Maven项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的软件项目管理工具。</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/160.png" width="1600" height="600" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>系统测试</h3>
+                        <p class="text">项目采用Postman与Fiddler结合进行接口测试,前台系统采用Chrom控制台进行测试,将返回的数据进行处理。</p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/170.png" width="1600" height="600" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="pic">
+                    <div class="index_focus_info">
+                        <h3>谢谢！</h3>
+                        <p class="text"></p>
+                    </div>
+                    <img class="pic" src="../../../static/img/login/140.jpg" width="1600" height="600" alt="">
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="slide_nav">
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+        <a href="javascript:;">●</a>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".index_focus").hover(function(){
+            $(this).find(".index_focus_pre,.index_focus_next").stop(true, true).fadeTo("show", 1)
+        },function(){
+            $(this).find(".index_focus_pre,.index_focus_next").fadeOut()
+        });
+
+        $(".index_focus").slide({
+            titCell: ".slide_nav a ",
+            mainCell: ".bd ul",
+            delayTime: 500,
+            interTime: 3500,
+            prevCell:".index_focus_pre",
+            nextCell:".index_focus_next",
+            effect: "fold",
+            autoPlay: true,
+            trigger: "click",
+            startFun:function(i){
+                $(".index_focus_info").eq(i).find("h3").css("display","block").fadeTo(1000,1);
+                $(".index_focus_info").eq(i).find(".text").css("display","block").fadeTo(1000,1);
+            }
+        });
+
+    });
+</script>
+<br>
+</body>
+</html>

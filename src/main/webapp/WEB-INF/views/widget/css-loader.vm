@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="${rc.contextPath}/css/bootstrap.min.css">
+<link rel="stylesheet" href="${rc.contextPath}/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="${rc.contextPath}/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="${rc.contextPath}/css/alertify-bootstrap-3.css">
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/simple-line-icons/simple-line-icons.min.css" >
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/uniform/css/uniform.default.css">
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/select2/select2.css"/>
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/select2/css/select2-bootstrap.min.css"></link>
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/duallistbox/bootstrap-duallistbox.min.css"></link>
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/bootstrap-toastr/toastr.min.css"/>
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/icheck/skins/minimal/orange.css"/>
+<link rel="stylesheet" href="${rc.contextPath}/css/titatoggle-dist.css" />
+<link rel="stylesheet" href="${rc.contextPath}/css/error.css" />
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+<link rel="stylesheet" href="${rc.contextPath}/js/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+<link rel="stylesheet" href="${rc.contextPath}/css/components-rounded.css" id="style_components">
+<link rel="stylesheet" href="${rc.contextPath}/css/plugins.css">
+<link rel="stylesheet" href="${rc.contextPath}/css/layout.css">
+<link rel="stylesheet" href="${rc.contextPath}/css/default.css" id="style_color">
+<link rel="stylesheet" href="${rc.contextPath}/css/custom.css">
+<link rel="stylesheet" href="${rc.contextPath}/css/undubscribe.css">
+<link href="${rc.contextPath}/js/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet">
+<link rel="stylesheet" href="${rc.contextPath}/css/sweetalert.css">

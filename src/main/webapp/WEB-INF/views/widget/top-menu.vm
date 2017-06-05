@@ -1,0 +1,34 @@
+<style type="text/css">
+    [v-cloak] {
+        display: none;
+    }
+.page-header .page-header-top .top-menu .navbar-nav > li.dropdown.work {
+    padding: 0 15px
+}
+</style>
+<ul class="nav navbar-nav pull-right" id="userRest">
+    <!-- END NOTIFICATION DROPDOWN -->
+    <li class="droddown dropdown-separator">
+        <span class="separator"></span>
+    </li>
+    <!-- BEGIN USER LOGIN DROPDOWN -->
+    <li class="dropdown dropdown-user dropdown-dark">
+        <a href="javascript:;" class="dropdown-toggle">
+            <span class="username username-hide-mobile">欢迎</span>
+        </a>
+    </li>
+    <!-- END USER LOGIN DROPDOWN -->
+    <!-- BEGIN USER LOGIN DROPDOWN -->
+    <li class="dropdown dropdown-extended quick-sidebar-toggler">
+        <span class="sr-only">Toggle Quick Sidebar</span>
+        <i class="icon-logout logout" id="logout" title="退出系统"></i>
+    </li>
+    <!-- END USER LOGIN DROPDOWN -->
+</ul>
+<script>
+	 $(".logout").click(function(){
+		 window.location.href=__ctx + "/login.html";
+		 return false;
+	 });
+</script>
+
